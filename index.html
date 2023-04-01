@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="tittle">
+        <div id="text-box">
+            <h1>SPLI</h1>
+            <h1>TTER</h1>
+        </div>
+    </div>
+
+    <div id="calculator-box">
+        <div id="column-box-1">
+        <div id="bill">
+            <label for="bill">Bill</label>
+            <input type="number" name="bill" id="bill-amount" placeholder="0.00">
+        </div>
+        <div id="tip-selector">
+            <label for="percent">Select Tip %</label>
+            <div id="percent-box">
+                <!-- <div class="column" id="column1"> -->
+                    <div class="percent-button">
+                        <div class="percent" value="0.05">5%</div>
+                    </div>
+                    <div class="percent-button">
+                        <div class="percent" value="0.1">10%</div>
+                    </div>
+                    <div class="percent-button">
+                        <div class="percent" value="0.15">15%</div>
+                    </div>
+                    <div class="percent-button">
+                        <div class="percent" value="0.25">25%</div>
+                    </div>
+                    <div class="percent-button">
+                        <div class="percent" value="0.50">50%</div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="column" id="column2"> -->
+                    <div class="custom-percent-box">
+                        <input type="number" name="percent-custom" id="custom-percent" class="percent"
+                            placeholder="Custom">
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <div id="people-selector">
+            <label for="people">Number of People</label>
+            <input type="number" name="people" id="people-amount" placeholder="0">
+        </div>
+        </div>
+
+        <div id="column-box-2">
+            <div id="result-box">
+                <div class="tip-amount">
+                    <div class="tip-text">
+                        <h3>Tip Amount</h3>
+                        <p>/ person</p>
+                    </div>
+                    <div class="amount-value">$0.00</div>
+                </div>
+                <div class="tip-amount">
+                    <div class="tip-text">
+                        <h3>Total</h3>
+                        <p>/ person</p>
+                    </div>
+                    <div class="amount-value">$0.00</div>
+                </div>
+                <div id="button-reset">
+                    <p>RESET</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

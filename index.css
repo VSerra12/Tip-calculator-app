@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+.l {
+    color: hsl(183, 100%, 15%);
+    color: hsl(186, 14%, 43%);
+    color: hsl(184, 14%, 56%);
+    color: hsl(185, 41%, 84%);
+    color: hsl(189, 41%, 97%);
+    color: hsl(0, 0%, 100%);
+    color: hsl(172, 67%, 45%);
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Space Mono', monospace;
+    height: 933px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    background-color: hsl(185, 41%, 84%);
+    margin: 0px;
+}
+
+#tittle {
+    height: 12.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#text-box {
+    letter-spacing: 10px;
+    text-align: center;
+
+}
+
+#text-box h1 {
+    color: hsl(183, 100%, 15%);
+    margin: 7.5px 0px;
+    font-size: 24px;
+}
+
+#calculator-box {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 87.5%;
+}
+
+input {
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    text-align: right;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+label {
+    color: hsl(186, 14%, 43%);
+    padding: 7.5px 0px;
+    font-size: 20px;
+}
+
+#bill-amount {
+    background: url(images/icon-dollar.svg) no-repeat scroll 15px 15px;
+    background-position: 20px;
+    border: 0px;
+    height: 50px;
+
+}
+
+#bill-amount:focus-visible,
+#custom-percent:focus-visible {
+    outline: hsl(172, 67%, 45%) auto 1px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#bill {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+}
+
+#percent-box {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+#column1 {
+    align-items: flex-start;
+}
+
+#column2 {
+    align-items: flex-end;
+} */
+
+.percent-button {
+    width: 47.5%;
+    height: 50px;
+    display: flex;
+    background-color: hsl(183, 100%, 15%);
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 0px;
+    color: hsl(189, 41%, 97%);
+    font-size: 24px;
+    justify-content: center;
+}
+
+.percent-button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+#tip-selector {
+    height: 50%;
+}
+
+#custom-percent {
+    background-color: hsl(0, 0%, 100%);
+    width: 95%;
+    height: 100%;
+    border: 0px;
+    color: hsl(183, 100%, 15%);
+}
+
+input::placeholder {
+    padding-right: 15px;
+}
+
+.custom-percent-box {
+    width: 47.5%;
+    height: 50px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#people-selector {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#people-selector:focus-visible {
+    outline: orange auto 1px;
+}
+
+#people-amount {
+    background: url(images/icon-person.svg) no-repeat scroll 15px 15px;
+    background-position: 20px;
+    border: 0px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#result-box {
+    height: 95%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+
+.tip-amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.tip-text>h3,
+.tip-text p {
+    margin: 0px;
+    color: hsl(189, 41%, 97%);
+}
+
+.tip-text p {
+    color: hsl(184, 14%, 56%);
+}
+
+.amount-value {
+    color: hsl(172, 67%, 45%);
+    font-size: 30px;
+
+}
+
+#button-reset {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(172, 67%, 45%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: hsl(183, 100%, 15%);
+    margin-top: 15px;
+}
+
+#button-reset:hover {
+    background-color: hsl(185, 41%, 84%);
+
+}
+
+#column-box-1 {
+    height: 67.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#column-box-2 {
+    height: 32.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 376px) {
+    body {
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #tittle {
+        margin: 110px 0px 60px 0px;
+    }
+
+    #calculator-box {
+        width: 950px;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        border-radius: 10px;
+    }
+
+    #column-box-1,
+    #column-box-2 {
+        width: 47.2%;
+        height: 100%;
+    }
+
+    #column-box-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #column-box-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .percent-button,
+    .custom-percent-box {
+        width: 30%;
+    }
+
+    #percent-box {
+        height: 150px;
+    }
+
+    #bill {
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    #tip-selector {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #result-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}

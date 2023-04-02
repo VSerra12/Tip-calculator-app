@@ -15,14 +15,14 @@ html,
 body {
     overflow-x: hidden;
     font-family: 'Space Mono', monospace;
-    height: 933px;
 }
 
 body {
-    overflow-x: hidden;
     position: relative;
     background-color: hsl(185, 41%, 84%);
     margin: 0px;
+    height: 933px;
+    scroll-behavior: auto;
 }
 
 #tittle {
@@ -60,6 +60,7 @@ input {
     text-align: right;
     cursor: pointer;
     font-size: 24px;
+    
 }
 
 label {
@@ -73,6 +74,7 @@ label {
     background-position: 20px;
     border: 0px;
     height: 50px;
+    background-color: hsl(189, 41%, 97%);
 
 }
 
@@ -102,23 +104,6 @@ input::-webkit-inner-spin-button {
     flex-wrap: wrap;
     flex-direction: row;
 }
-
-/* .column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-}
-
-#column1 {
-    align-items: flex-start;
-}
-
-#column2 {
-    align-items: flex-end;
-} */
 
 .percent-button {
     width: 47.5%;
@@ -155,6 +140,8 @@ input::-webkit-inner-spin-button {
     height: 100%;
     border: 0px;
     color: hsl(183, 100%, 15%);
+    background-color: hsl(189, 41%, 97%);
+
 }
 
 input::placeholder {
@@ -187,6 +174,8 @@ input::placeholder {
     border: 0px;
     height: 50px;
     margin-top: 10px;
+    background-color: hsl(189, 41%, 97%);
+
 }
 
 #result-box {
@@ -252,8 +241,18 @@ input::placeholder {
 
 
 @media (min-width: 376px) {
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+    }
+
     body {
         height: auto;
+        width: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -262,12 +261,13 @@ input::placeholder {
     }
 
     #tittle {
-        margin: 110px 0px 60px 0px;
+        margin: 40px 0px 40px 0px;
+        height: 15%;
     }
 
     #calculator-box {
-        width: 950px;
-        height: 500px;
+        width: 50%;
+        height: 35%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -275,22 +275,21 @@ input::placeholder {
         border-radius: 10px;
     }
 
-    #column-box-1,
-    #column-box-2 {
+    #column-box-1 {
         width: 47.2%;
         height: 100%;
-    }
-
-    #column-box-1 {
         display: flex;
         flex-direction: column;
         align-items: stretch;
     }
 
     #column-box-2 {
+        width: 47.2%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        justify-content: center;
     }
 
     .percent-button,
@@ -316,7 +315,21 @@ input::placeholder {
     #result-box {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+    }
+    
+    #amount-1{
+        padding-top: 40px;
     }
 
+    .tip-text h3, .tip-text p{
+        font-size: 15px;
+    }
+
+    #button-reset{
+        margin-top: 40%;
+    }
+
+    #text-box h1 {
+        font-size: 15px;
+    }
 }

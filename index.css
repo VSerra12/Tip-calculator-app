@@ -10,7 +10,6 @@ body {
     position: relative;
     background-color: hsl(185, 41%, 84%);
     margin: 0px;
-    height: 933px;
     scroll-behavior: auto;
 }
 
@@ -238,7 +237,6 @@ input::-webkit-inner-spin-button {
     }
 
     body {
-        height: auto;
         width: auto;
         display: flex;
         align-items: center;
